@@ -1,0 +1,48 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+It was much simpler to figure out where the error was and keeping track of changes was much easier. 
+Also the method was much simpler to understand as it was laid out in a easily viewable format. 
+This method was automated since a program ran both and compared the two files.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+It simplify the process of backtracking to previous versions. 
+And, finding the errors could more easily be done as a coder, 
+as they could step through each change to find where the mistake took place.
+This would cut the time down because instead of having periodic blocks of changed code, 
+a coder could find a specific instance or line that was changed.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Sometimes an issue occurs and having an automatic save would be helpful, 
+as not all the work is lost. 
+This way you can at least partially keep the work. 
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Some vc systems like Git are geared toward types of files that may work in tandem, 
+things like code are likely to require more than one file. 
+On the other hand, files in google docs are probably independent from each other, 
+so tracking them separately is probably not a big issue.  
+
+How can you use the commands git log and git diff to view the history of files?
+
+The git log allows the user to find all commits with history. 
+Using this with git diff command, 
+the user can navigate the changes and find the desired change. 
+
+How might using version control make you more confident to make changes that could break something?
+
+If a code change is more likely to break the code, having a saved trace would make whole branches of code more easily to navigate and trace back to root of the problem.
+ 
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I want start making code snippest using the Sublime editor, 
+and try understanding how the Git programs and commands work. 
+I want to be able to master using Git and version control. 
+
+
+
+
+
+
