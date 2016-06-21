@@ -14,13 +14,59 @@ the files that are to committed into the repository, so have not yet been added.
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+As you complete each file for a logical change add them to the staging area. 
+Once the complete logical change has been added, then you can commit the change.
+This will ensure that the user is constantly thinking about what needs to be added.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Maybe you want to create an application that has a core functionality,
+but you want to make multiple versions that have additional functionalities.
+Each can be different but having the branches organizes the additional functions.
+
 How do the diagrams help you visualize the branch structure?
+
+Diagrams give a visual representation of the flow of tree structures.
+It allows the user an different way to representing the data.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+It takes each code line by line and determines whether or not it should be inserted. 
+It compares the changes to a shared parent, which determines whether or not it will be there.
+It is shown in the diagram that way to show that branch was made and was merged back into one.
+
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+
+Automtic merging saves the hassle of going line by line and checking which needs to be substituted or added.
+It however is not a human and if certain code follows a logical flow, 
+it could break this when automatically merging. 
+This might not be an issue with manual merging since the user knows what the logical flow is.
+
+Commands:
+
+git add  |    Add a file to the staging area
+git commit  |    Commit the files from the staging area to the repository 
+git status  |    Show which files are in the staging area, and which files from the working directory are not part of the repository    
+git diff  |    Git diff without arguments is comparing the working directory with the staging area
+git diff --staged  |    Compare the staging area with the repository
+git reset --hard  |    Undo all changes! There is no rollback for this, so be carefull!
+git checkout master  |    Restore the "Head" to the latest check-in (this will be part of a later lesson/module)
+git log --graph --oneline <branch1> <branch2>  |    Show a visual representation of the commit history within different branches
+git checkout -b new_branch_name  |    Creates a new branch and do a checkout on this branch in one call instead of git branch new_branch_name and git checkout new_branch_name
+git merge branch1 branch2  |    Merge two branches, branch2 get merged into branch1
+git branch -d name  |    Remove the branch with the specified name
+git show commitId  |    Show the changes made in this commit compared to the previous version. This is working even after merging.
+Status API Training Shop Blog About
+
+Commands: l3
+
+git remote  |    Show all remote locations for the repository
+git remote add origin url |     Add a new remote location for the repository. Origin is the default name to use when you create only one remote location. Url should be the https url to the github repository.
+git remove -v  |    Outputs the remote locations with verbose information (fetch and push urls)
+git push origin master  |    Push the master branch to the remote location origin.
+git pull origin master  |    Get the master branch from the remote location origin.
+git pull origin master  |    = Git fetch origin + git merge master origin/master
+git fetch origin  |    Get the changes from the remote location into the (hidden?) origin/master branch
