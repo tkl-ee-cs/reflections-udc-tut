@@ -8,7 +8,9 @@ It provides the flexibility to deal with the code in various situations.
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+There may be situation where the user doesn't want to add to the remote repository. 
+This may occur when the user is working with a group and having it update would affect everyone involved. 
+It may be better to keep the content local till a push is needed.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
